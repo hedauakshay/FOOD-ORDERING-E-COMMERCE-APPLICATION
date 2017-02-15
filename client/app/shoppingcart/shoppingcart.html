@@ -1,0 +1,69 @@
+<div class="container-fluid bg-img">
+<div class="container login-page">
+<div class="container panel shopcart-container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="panel-info">
+				<div class="panel-heading">
+					<div class="panel-title">
+						<div class="row">
+							<div class="col-xs-6">
+								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Dish Cart</h5>
+							</div>
+							<div class="col-xs-6">
+								<a href="#/view1"><button type="button" class="btn btn-primary btn-sm btn-block">
+									<span class="glyphicon glyphicon-share-alt"></span> Continue ordering dish
+								</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="row" ng-repeat="item in orderDetails" >
+						<div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
+						</div>
+						<div class="col-xs-7">
+							<h3 class="product-name"><strong>Dish name</strong>: {{item.desc}}</h3>
+							<div class="col-md-7">
+							<table class="borderless">
+								<tbody>
+									<tr style="font-size: 100%; color: #888;">
+										<td>Price: {{item.cost}}</td>
+
+									</tr>
+									<tr style="font-size: 100%; color: #888;">
+										<td>Store Name: {{item.storeName}}</td>
+									</tr>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						</div>
+						
+					</div>
+					
+					
+					<hr>
+					
+					<hr>
+				</div>
+				<div class="panel-footer">
+					<div class="row text-center">
+						<div class="col-xs-9">
+							<p style="font-size: 20px;" class="text-right"><strong>Total: ${{total}}</strong></p>
+						</div>
+						<div class="col-xs-3">
+							<button type="button" class="btn btn-danger btn-block" >
+								<a href="#/payment">Checkout</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
